@@ -1,0 +1,45 @@
+/* Reset margin and padding */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Style for the body to cover the entire screen */
+body, html {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+overflow: hidden; /* Disable scrolling */
+padding-bottom: 2%;
+}
+/* Full-screen video styling */
+.background-video {
+position: absolute; /* Allows positioning of video to cover the entire background */
+top: 0;
+left: 0;
+width: 100vw; /* Full width of the viewport */
+height: 100vh; /* Full height of the viewport */
+object-fit: cover; /* Ensures video covers the whole viewport without distortion */
+z-index: -1; /* Places video behind the text box */
+}
+/* Centered text box styling */
+.text-box {
+    background-color: #1e1e1e;
+    color: #d6d6d6;
+    font-weight: normal;
+    font-style: italic;
+    padding: 25px;
+    border-radius: 2px;
+    text-align: center;
+    max-width: 65%;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    border-left: 3px solid #777;
+
+    /* Center bottom positioning */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
